@@ -1,0 +1,9 @@
+.collapse-side {
+  margin-left: 50px !important;
+}
+.selecterror{
+  color: black;
+}
+.selecterror input {
+  border-color: red !important;
+}
