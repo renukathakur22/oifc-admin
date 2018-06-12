@@ -1,0 +1,10 @@
+.sub-elements{margin-bottom: 0px !important; margin-top: 3px}
+.sub-elements .col-md-4{padding-right: 0px}
+.sub-elements .col-md-8{padding-left: 0px}
+.sub-el-wrapper{padding: 10px; background-color: #ecebeb; border:1px solid #ced4da; border-radius: 2px; margin-top: 10px}
+.form-control{font-size: 14px}
+label, button{font-size: 13px}
+.screen-item-action-btns button{width: 33%}
+.screen-item-action-btns button:nth-child(2),
+.screen-item-action-btns button:nth-child(3)
+{margin-left: 0.5%}

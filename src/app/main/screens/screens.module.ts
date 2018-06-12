@@ -1,26 +1,15 @@
 
-import { NgModule } from '@angular/core';
-import {Routes, RouterModule} from "@angular/router";
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {ScreensComponent} from "./screens.component";
-import {ReactiveFormsModule} from '@angular/forms';
-import { CommonModule  } from '@angular/common';
-import {FormsModule} from "@angular/forms";
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-const router:Routes = [
-  {path: '', component: ScreensComponent}
-];
-
+import {ManageScreensComponent} from './manage-screens/manage-screens.component';
+import {AddScreenComponent} from './add-screen/add-screen.component';
+import {ScreenItemComponent} from './add-screen/screen-item/screen-item.component';
+import {ScreenInputComponent} from './add-screen/screen-item/screen-input/screen-input.component';
+import {routing} from './screens.routing';
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    NgbModule,
-    RouterModule.forChild(router),
-    ReactiveFormsModule
-  ],
-  declarations: [ScreensComponent]
+  imports: [routing, CommonModule],
+  declarations: [ScreensComponent, ManageScreensComponent, AddScreenComponent, ScreenItemComponent, ScreenInputComponent]
 })
 export class ScreensModule {
 }
-

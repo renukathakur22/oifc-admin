@@ -1,25 +1,12 @@
 
-import { NgModule } from '@angular/core';
-import {Routes, RouterModule} from "@angular/router";
+import {NgModule} from '@angular/core';
 import {LanguagesComponent} from "./languages.component";
-import {ReactiveFormsModule} from '@angular/forms';
-import { CommonModule  } from '@angular/common';
-import {FormsModule} from "@angular/forms";
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-const router:Routes = [
-  {path: '', component: LanguagesComponent}
-];
-
+import {ManageLanguagesComponent} from './manage-languages/manage-languages.component';
+import {AddLanguageComponent} from './add-language/add-language.component';
+import {routing} from './languages.routing';
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    NgbModule,
-    RouterModule.forChild(router),
-    ReactiveFormsModule
-  ],
-  declarations: [LanguagesComponent]
+  imports: [routing],
+  declarations: [LanguagesComponent, ManageLanguagesComponent, AddLanguageComponent]
 })
 export class LanguagesModule {
 }

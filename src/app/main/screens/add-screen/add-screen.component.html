@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+            <h6 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Screen Structure</span>
+                <!--<span class="badge badge-secondary badge-pill">3</span>-->
+            </h6>
+            <div style="border: 1px solid rgba(0, 0, 0, 0.125); min-height: 520px; border-radius: 4px">
+
+            </div>
+        </div>
+        <div class="col-md-8 order-md-1">
+            <h6 class="mb-3">Add Screen Components</h6>
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="title">Screen Title</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="title" placeholder="Title">
+                        <div class="invalid-feedback" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="title">Screen Logo</label>
+                    <div class="input-group">
+                        <input type="file" class="form-control" id="logo">
+                        <div class="invalid-feedback" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="desc">Screen Description <span class="text-muted">(Optional)</span></label>
+                    <div class="input-group">
+                        <textarea class="form-control" id="desc" placeholder="Description" required style="resize: none"></textarea>
+                        <div class="invalid-feedback" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label>Screen Header Elements <span class="text-muted">(Optional)</span></label>
+                    <br/>
+                    <a href="javascript: void(0)" (click)="initiateHeaderAddition()" *ngIf="addEl != 1">Add Header Element</a>
+                    <div *ngFor="let item of [0,1,2,3,4,5,6,7,8,9].slice(0,headerElNum)">
+                        <screen-item [parent]="self"></screen-item>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label>Screen Content Elements <span class="text-muted">(Optional)</span></label>
+                    <br/>
+                    <a href="javascript: void(0)" (click)="initiateContentAddition()" *ngIf="addEl != 2">Add Content Element</a>
+                    <div *ngFor="let item of [0,1,2,3,4,5,6,7,8,9].slice(0,contentElNum)">
+                        <screen-item [parent]="self"></screen-item>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label>Screen Footer Elements <span class="text-muted">(Optional)</span></label>
+                    <br/>
+                    <a href="javascript: void(0)" (click)="initiateFooterAddition()" *ngIf="addEl != 3">Add Footer Element</a>
+                    <div *ngFor="let item of [0,1,2,3,4,5,6,7,8,9].slice(0,footerElNum)">
+                        <screen-item [parent]="self"></screen-item>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <button type="button" class="btn btn-primary">Add Custom Item</button>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Add Screen to Application</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+    </footer>
+</div>

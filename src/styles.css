@@ -3,7 +3,13 @@
 body {
   padding-top: 80px;
 }
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
+@font-face {font-family: 'montserrat-light';src: url('assets/fonts/montserrat/Montserrat-Light.otf') format('woff');}
+@font-face {font-family: 'montserrat-regular';src: url('assets/fonts/montserrat/Montserrat-Regular.otf') format('woff');}
+@font-face {font-family: 'montserrat-medium';src: url('assets/fonts/montserrat/Montserrat-Medium.otf') format('woff');}
+@font-face {font-family: 'montserrat-bold';src: url('assets/fonts/montserrat/Montserrat-Bold.otf') format('woff');}
+@font-face {font-family: 'montserrat-semi-bold';src: url('assets/fonts/montserrat/Montserrat-SemiBold.otf') format('woff');}
+body {font-family: montserrat-regular; line-height: 1.4}

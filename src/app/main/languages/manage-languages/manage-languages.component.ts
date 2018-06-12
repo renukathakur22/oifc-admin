@@ -9,7 +9,7 @@ import {NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-bo
 
 @Component({
   selector: 'manage-languages',
-  templateUrl: './manage.component.html'
+  templateUrl: './manage-languages.component.html'
 })
 export class ManageLanguagesComponent {
 

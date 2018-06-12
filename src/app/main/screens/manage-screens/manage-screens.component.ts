@@ -9,9 +9,10 @@ import {NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-bo
 
 @Component({
   selector: 'manage-screens',
-  templateUrl: './manage.component.html'
+  templateUrl: './manage-screens.component.html',
+  styleUrls: ['./manage-screens.component.css']
 })
-export class ScreensManageComponent {
+export class ManageScreensComponent {
 
 
   constructor(private cdRef: ChangeDetectorRef,

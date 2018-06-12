@@ -1,0 +1,14 @@
+<div class="sub-el-wrapper">
+    <div *ngFor="let screenInput of [0,1,2,3,4,5,6,7,8,9].slice(0,elCount)">
+        <screen-input></screen-input>
+    </div>
+    <div class="mb-4 sub-elements">
+        <div class="row">
+            <div class="col-md-12 screen-item-action-btns">
+                <button type="button" class="btn btn-success" (click)="elCount = elCount + 1">Add More Keys</button>
+                <button type="button" class="btn btn-primary" (click)="saveAddition()">Save Item</button>
+                <button type="button" class="btn btn-danger" (click)="cancelAdd()">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
